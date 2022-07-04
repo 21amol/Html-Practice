@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Practise</title>
+</head>
+
+<body>
+	<h1>Forms, List and Tables</h1>
+
+	<!-- Unorderd list, see the live server for better understatnding -->
+	<ul>
+		<li>Home</li>
+		<li>About</li>
+		<li>Services</li>
+		<li>Contach</li>
+	</ul>
+
+	<!-- orderd list, see the live server for better understatnding. Gives proper order like 1. Home, 2.About, 3.Contact-->
+	<ol>
+		<li>Home</li>
+		<li>About</li>
+		<li>Contact</li>
+	</ol>
+
+	<!-- Always keep ur tables inside a div. -->
+
+	<div>
+
+		<table>
+			<p>Football Player Names</p>
+			<tr>
+				<!--table row -->
+				<th>S.No</th>
+				<!--table heading -->
+				<th>Name</th>
+				<th>Jersey No</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<!--table data -->
+				<td>Amol</td>
+				<td>21</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Rohit</td>
+				<td>30</td>
+			</tr>
+		</table>
+	</div>
+
+	<div>
+		<form>
+			<!-- its a test form -->
+			First Name: <input type="text" name="firstName" id="name" for="name" placeholder="Your Nmae"> <br>
+
+			<!-- radio type button. id and for should be same. name helps backhand to reconize the element easily -->
+			<label>
+				Section: <input type="radio" name="setion" id="sectiona" for="sectiona">Section A
+			</label>
+			<label>
+				<input type="radio" name="setion" id="sectionb" for="sectionb">Section B
+			</label>
+			<label>
+				<input type="radio" name="setion" id="sectionc" for="sectionc">Section C
+			</label><br>
+
+			<!-- checkbox type button. -->
+			<label>
+				Hobbies: <input type="checkbox" name="Hobbies" id="football" for="football">Football
+			</label>
+			<label>
+				<input type="checkbox" name="Hobbies" id="cricket" for="cricket">cricket
+			</label><br>
+			
+			<!-- textarea tag==> if you want to write more data. -->
+			Explain: <textarea name="explain" id="reason" for="reason" placeholder="Reason to join school"></textarea><br>
+
+			Studs: <select name="studs" id="shoes" for="shoes">
+				<option value="no-shoes">Select Studs You Want</option>
+				<option value="nike">Nike</option>
+				<option value="adidas">Adidas</option>
+				<option value="puma">Puma</option>
+			</select>
+			
+		</form>
+	</div>
+
+</body>
+
+</html>
